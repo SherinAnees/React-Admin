@@ -1,9 +1,9 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
+import { getAuth } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: process.env.FIREBASE_API_KEY,
+  apiKey: "AIzaSyA9taPTAxXNRh8dcDYeZ_sQ11Dsr4ekEHc",
   authDomain: "react-admin-301eb.firebaseapp.com",
   projectId: "react-admin-301eb",
   storageBucket: "react-admin-301eb.appspot.com",
@@ -14,4 +14,5 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
+
+export const auth = getAuth(app);
